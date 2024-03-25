@@ -421,7 +421,17 @@ body {
 .hero__image {
   aspect-ratio: 1/1;
   position: relative;
-  flex: 0 1 47.166667%
+  flex: 0 1 47.166667%;
+  -webkit-transform: translate(25%,0);
+  transform: translate(25%,0);
+  opacity: 0
+}
+.hero__image._watcher-view {
+  transition-delay: .3s;
+  transition-duration: 1.7s;
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0)
 }
 .hero__image img {
   width: 100%;
